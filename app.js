@@ -33,9 +33,6 @@ app.use('/api', messageRoutes);
 io.on('connection', (socket) => {
     console.log('A user connected');
 
-    // Add socket event handlers for real-time communication
-    // You can implement features like message broadcasting, user presence, etc.
-
     socket.on('disconnect', () => {
         console.log('User disconnected');
     });
